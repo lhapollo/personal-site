@@ -103,7 +103,6 @@
   opacity: 0;
   transform: translateY(50px);
   animation: projectSlideUp 0.6s ease-out forwards;
-  border: 1px solid var(--site-main-LIGHT);
 }
 
 @keyframes projectSlideUp {
