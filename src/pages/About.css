@@ -1,0 +1,97 @@
+.about-page {
+    width: 100%;
+    padding-top: 15vh; /* Exactly navbar height */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .about-content-wrapper {
+    max-width: 800px;
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .about-content {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: all 0.8s ease-out;
+  }
+  
+  .about-content.animate {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  /* Add delay for each subsequent element */
+  .about-content:nth-child(1) { transition-delay: 0s; }
+  .about-content:nth-child(2) { transition-delay: 0.2s; }
+  .about-content:nth-child(3) { transition-delay: 0.4s; }
+  .about-content:nth-child(4) { transition-delay: 0.6s; }
+  
+  .blurb-text {
+    width: 100%;
+    margin-top: 2rem;
+    text-align: center;
+  }
+  
+  .blurb-text p {
+    margin: 1rem 0;
+  }
+  
+  /* Ensure image is properly sized */
+  .about-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 2rem 0;
+  }
+  
+  /* Title and typing animation styles */
+  h1.typed {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: inline-block;
+    white-space: nowrap;
+    border-right: 4px solid var(--site-main-LIGHT);
+    animation: typing 1.5s steps(30, end) forwards, blinking 1s infinite;
+    overflow: hidden;
+    width: 0;
+  }
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 8ch } /* Set to exact width needed for "About Me" */
+  }
+  
+  @keyframes blinking {
+    0% { border-right-color: transparent }
+    50% { border-right-color: var(--site-main-LIGHT) }
+    100% { border-right-color: transparent }
+  }
+  
+  /* Container positioning */
+  #about-body {
+    width: 100%;
+    min-height: calc(100vh - 15vh); /* Full height minus navbar */
+    margin-top: 15vh; /* Exactly navbar height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .blurb {
+    max-width: 800px;
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  } 
+  

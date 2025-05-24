@@ -1,0 +1,23 @@
+[
+    {
+      "title": "Memory Test",
+      "link": "https://verbalmemorytest.netlify.app",
+      "image": "/imgs/verbalmemory.png",
+      "repo": "https://github.com/lhapollo/VerbalMemory",
+      "description": "A simple memory test game built with HTML, CSS, and JavaScript. Can you remember which words you've seen before and which you haven't? Inspired by the Human Benchmark."
+    },
+    {
+      "title": "To Do List",
+      "link": "https://lexihan-todolist.netlify.app",
+      "image": "/imgs/todolist.png",
+      "repo": "https://github.com/lhapollo/todo-list",
+      "description": "A simple to do list app built with React. Includes features like adding, deleting, and marking tasks as completed, as well as local storage functionality."
+    },
+    {
+      "title": "Odin Calculator",
+      "link": "https://lhapollo.github.io/odin-calculator/",
+      "image": "/imgs/calculator.png",
+      "repo": "https://github.com/lhapollo/odin-calculator",
+      "description": "A simple calculator app built with HTML, CSS, and JavaScript. Includes features like adding, subtracting, multiplying, and dividing. Made for The Odin Project."
+    }
+  ]

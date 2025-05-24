@@ -1,0 +1,36 @@
+.social-links {
+    position: fixed;
+    bottom: 2rem;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 1rem 0;
+    font-family: var(--roboto-mono);
+  }
+  
+  .social-links ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+  }
+  
+  .social-links li {
+    font-size: 2.5rem;
+    transition: transform 0.2s ease;
+  }
+  
+  .social-links li:hover {
+    transform: scale(1.1);
+  }
+  
+  .social-links a {
+    color: var(--site-main-LIGHT);
+    transition: color 0.2s ease;
+  }
+  
+  .social-links a:hover {
+    color: #748CAB;
+  } 
