@@ -37,12 +37,24 @@ function About() {
                 <div style={{ textAlign: 'center', width: '400px' }}>
                     <h1 className="typed" ref={el => observerRefs.current[0] = el}>About Me</h1>
                 </div>
-                <img 
-                    src="/imgs/lexipfp.jpg" 
-                    className="about-image about-content" 
-                    alt="Lexi's profile"
-                    ref={el => observerRefs.current[1] = el}
-                />
+                <div className="flip-card about-content" ref={el => observerRefs.current[1] = el}>
+                    <div className="flip-card-inner">
+                        <div className="flip-card-front">
+                            <img 
+                                src="/imgs/lexipfp.jpg" 
+                                className="about-image"
+                                alt="Lexi's profile"
+                            />
+                        </div>
+                        <div className="flip-card-back">
+                            <img 
+                                src="/imgs/lexipfp2.jpg" 
+                                className="about-image"
+                                alt="Lexi's second profile"
+                            />
+                        </div>
+                    </div>
+                </div>
                 <div className="blurb-text">
                     <p className="about-content" ref={el => observerRefs.current[2] = el}>
                         Hi, I'm Lexi. I'm a CS student at the University of Waterloo.
