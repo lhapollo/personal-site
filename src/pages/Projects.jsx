@@ -46,6 +46,7 @@ function Projects() {
                             githubLink={project.repo}
                             liveLink={project.link}
                             description={project.description}
+                            tech={project.tech}
                         />
                     ))
                 )}
