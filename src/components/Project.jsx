@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Modal from './Modal';
 
-function Project({ title, image, githubLink, liveLink, description }) {
+function Project({ title, image, githubLink, liveLink, description, tech }) {
     const [isModalOpen, setIsModalOpen] = useState(false);
 
     const handleClick = () => {
@@ -37,6 +37,7 @@ function Project({ title, image, githubLink, liveLink, description }) {
                 onClose={() => setIsModalOpen(false)}
                 title={title}
                 description={description || "No description available."}
+                tech={tech}
             />
         </div>
     );
