@@ -1,33 +1,17 @@
-.main-container {
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .blurb {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    transform: translateY(-10vh); /* Offset for visual balance with navbar */
-  }
-  
-  .blurb h1 {
-    font-size: 6rem;
-    margin: 0;
-    font-family: var(--roboto-mono);
-    font-weight: 700;
-  }
-  
-  hr {
-    width: 60%;
-    border: none;
-    height: 2px;
-    background-color: var(--site-main-LIGHT);
-    margin: 2rem auto;
-  } 
+@keyframes typing {
+    from {width: 0}
+    to {width: 13ch}
+}
+
+@keyframes blink {
+    50% {border-color: transparent}
+}
+
+.typing {
+    display: inline-block;
+    overflow: hidden; 
+    white-space: nowrap; 
+    width: 0;
+    border-right: 3px solid white; 
+    animation: typing 1.5s steps(13, end) forwards, blink 1s step-end infinite;
+}

@@ -1,137 +1,45 @@
-.about-page {
-    width: 100%;
-    padding-top: 15vh; /* Exactly navbar height */
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .about-content-wrapper {
-    max-width: 800px;
-    width: 100%;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  
-  .about-content {
-    opacity: 0;
-    transform: translateX(-100px);
-    transition: all 0.8s ease-out;
-  }
-  
-  .about-content.animate {
-    opacity: 1;
-    transform: translateX(0);
-  }
-  
-  /* Add delay for each subsequent element */
-  .about-content:nth-child(1) { transition-delay: 0s; }
-  .about-content:nth-child(2) { transition-delay: 0.2s; }
-  .about-content:nth-child(3) { transition-delay: 0.4s; }
-  .about-content:nth-child(4) { transition-delay: 0.6s; }
-  
-  .blurb-text {
-    width: 100%;
-    margin-top: 2rem;
-    text-align: center;
-  }
-  
-  .blurb-text p {
-    margin: 1rem 0;
-  }
-  
-  /* Flip Card Styles */
-  .flip-card {
-    position: relative;
-    width: 400px;
-    height: 400px;
-    margin: 2rem 0;
-    perspective: 1000px;
-  }
-  
-  .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-  }
-  
-  .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-  }
-  
-  .flip-card-front,
-  .flip-card-back {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--site-main-DARK);
-  }
-  
-  .flip-card-back {
-    transform: rotateY(180deg);
-  }
-  
-  .flip-card > .about-image {
-    display: block;
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-  }
-  
-  /* Title and typing animation styles */
-  h1.typed {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    display: inline-block;
-    white-space: nowrap;
-    border-right: 4px solid var(--site-main-LIGHT);
-    animation: typing 1.5s steps(30, end) forwards, blinking 1s infinite;
-    overflow: hidden;
-    width: 0;
-  }
-  
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 8ch } /* Set to exact width needed for "About Me" */
-  }
-  
-  @keyframes blinking {
-    0% { border-right-color: transparent }
-    50% { border-right-color: var(--site-main-LIGHT) }
-    100% { border-right-color: transparent }
-  }
-  
-  /* Container positioning */
-  #about-body {
-    width: 100%;
-    min-height: calc(100vh - 15vh); /* Full height minus navbar */
-    margin-top: 15vh; /* Exactly navbar height */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .blurb {
-    max-width: 800px;
-    width: 100%;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
+@keyframes coinFlip {
+  0% { transform: rotateY(0deg); }
+  100% { transform: rotateY(360deg); }
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+/* Fade + slide base state */
+.about-content {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.9s cubic-bezier(.22,1,.36,1),
+              transform 0.9s cubic-bezier(.22,1,.36,1);
+}
+
+/* When visible */
+.about-content.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger helpers */
+.delay-1 { transition-delay: 0.1s; }
+.delay-2 { transition-delay: 0.3s; }
+.delay-3 { transition-delay: 0.5s; }
+
+/* Image initial state */
+.coin-wrapper {
+  opacity: 0;
+  transform: translateY(40px) scale(0.9);
+  transition: opacity 1s cubic-bezier(.22,1,.36,1),
+              transform 1s cubic-bezier(.22,1,.36,1);
+}
+
+/* When visible */
+.coin-wrapper.animate {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}

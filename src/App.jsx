@@ -4,11 +4,7 @@ import Navbar from './components/Navbar'
 import Home from './pages/Home'
 import Projects from './pages/Projects'
 import About from './pages/About'
-import './App.css'
 import './index.css'
-import './components/Navbar.css'
-import './pages/Home.css'
-import './pages/About.css'
 
 function App() {
   return (
@@ -25,4 +21,4 @@ function App() {
   )
 }
 
-export default App 
+export default App

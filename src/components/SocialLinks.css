@@ -6,6 +6,8 @@
     width: 100%;
     padding: 1rem 0;
     font-family: var(--roboto-mono);
+    border: none;
+
   }
   
   .social-links ul {
@@ -27,7 +29,7 @@
   }
   
   .social-links a {
-    color: var(--site-main-LIGHT);
+    color: white;
     transition: color 0.2s ease;
   }
   

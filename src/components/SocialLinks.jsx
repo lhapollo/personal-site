@@ -4,7 +4,6 @@ import './SocialLinks.css';
 function SocialLinks() {
     return (
         <div className="social-links">
-            <hr />
             <ul>
                 <li>
                     <a href="https://github.com/lhapollo" target="_blank" rel="noopener noreferrer">
