@@ -1,5 +1,21 @@
 [
     {
+      "title": "FitCheck",
+      "link": "https://fit-check-green.vercel.app",
+      "image": "/imgs/fitcheck.png",
+      "repo": "https://github.com/lhapollo/resume-matcher",
+      "description": "FitCheck is a resume matching app that uses Google Gemini to analyze a user's resume and a job description, providing a fit score and suggestions for improvement.",
+      "tech": ["React", "Node.js", "Express", "Google Gemini API", "CSS"]
+    },
+    {
+      "title": "Myst",
+      "link": "https://myst-frontend-psi.vercel.app",
+      "image": "/imgs/myst.png",
+      "repo": "https://github.com/lhapollo/myst",
+      "description": "Myst is an app that predicts how likely a game will go on sale across the web based on historical data. Trained using a Random Forest Classifier using data from IsThereAnyDeal.",
+      "tech": ["React", "Python", "Scikit-learn", "CSS"]
+    }, 
+    {
       "title": "Memory Test",
       "link": "https://verbalmemorytest.netlify.app",
       "image": "/imgs/verbalmemory.png",
@@ -22,13 +38,5 @@
       "repo": "https://github.com/lhapollo/odin-calculator",
       "description": "A simple calculator app made for the Odin Project. Includes features like adding, subtracting, multiplying, and dividing.",
       "tech": ["HTML", "CSS", "JavaScript"]
-    },
-    {
-      "title": "Video Game Sale Predictor",
-      "link": "https://myst-frontend-psi.vercel.app",
-      "image": "/imgs/myst.png",
-      "repo": "https://github.com/lhapollo/myst",
-      "description": "Myst is an app that predicts how likely a game will go on sale across the web based on historical data. Trained using a Random Forest Classifier using data from IsThereAnyDeal.",
-      "tech": ["React", "Python", "Scikit-learn", "CSS"]
     }
   ]
