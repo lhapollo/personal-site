@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Project from "../components/Project";
+import SocialLinks from "../components/SocialLinks";
 
 function Projects() {
   const [projects, setProjects] = useState([]);
@@ -66,6 +67,9 @@ function Projects() {
             ))}
           </div>
         )}
+      </div>
+      <div className="absolute bottom-6 sm:bottom-8 z-10">
+        <SocialLinks />
       </div>
     </div>
   );
